@@ -36,6 +36,12 @@
 <p id="responseMsg"></p>
 </div>
 </div>
-<script src="script.js"></script>
+<script>
+  const form = document.getElementById("contactForm");
+const responseMsg = document.getElementById("responseMsg");
+form.addEventListener("submit", function () {
+responseMsg.innerHTML = "Sending message...";
+});
+</script>
 </body>
 </html>
